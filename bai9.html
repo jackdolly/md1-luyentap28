@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm đầu vào số n. Yêu cầu tính n!</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhập số bất kỳ")
+    function tinh(n){
+        let tich = 1;
+        for(let i = 1; i <= n; i++){
+            tich = tich*i;
+        }
+        return tich;
+    }
+    document.write(tinh(n))
+</script>
+</body>
+</html>

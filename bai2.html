@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình đầu vào là một mảng các số, và giá trị x.
+        Hàm sẽ đếm số lần xuất hiện phần tử x trong hàm và trả về giá trị đó</title>
+</head>
+<body>
+<script>
+    let num = 0;
+    function count(arr,x){
+        for (let i = 0; i < arr.length; i++){
+            if(x == arr[i]){
+                num++;
+            }
+        }
+        return num;
+    }
+    console.log(count([1,2,8,0,3,8],8))
+</script>
+</body>
+</html>

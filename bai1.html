@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>viết chương trình kiểm tra 1 năm là năm nhuận hay không?</title>
+</head>
+<body>
+<script>
+    let year = +prompt("nhập năm bất kỳ:");
+    let namnhuan = false;
+    function check(){
+        if(year % 4 == 0){
+            if (year % 100 == 0){
+                if (year % 400 == 0){
+                    namnhuan = true;
+                }
+            } else {
+                namnhuan = true;
+            }
+        }
+        if(namnhuan){
+            alert(year + " là năm nhuận");
+        } else {
+            alert(year + " không phải là năm nhuận");
+        }
+    }
+    check(namnhuan)
+</script>
+</body>
+</html>

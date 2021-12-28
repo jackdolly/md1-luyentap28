@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm tính hiệu các phần tử trong mảng số nguyên</title>
+</head>
+<body>
+<script>
+    function tichhieu(arr){
+        let sum = arr[0];
+        for (let i = 1; i < arr.length; i++){
+            sum += -arr[i]
+        }
+        return sum;
+    }
+    document.write(tichhieu([1,2,3]))
+</script>
+</body>
+</html>
